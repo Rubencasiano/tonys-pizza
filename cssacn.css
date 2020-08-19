@@ -1,0 +1,77 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; /** Reser para Rems = 10 px de 16px **/
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+h2{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2;
+}
+header{
+ 	background-color: #595959;
+	padding: 2rem;
+	text-align: center;
+	width: 100%; 
+}
+.img{
+	width: 100%;
+}
+#logo{
+	width: 20%;
+	padding-bottom: 2rem;
+	text-align: right;
+}
+.navegacion a{
+color: #ffffff;
+text-decoration: none;
+font-size: 2.2rem;
+display: block;
+}
+.navegacion a:hover{
+	color: #E72264;
+}
+.site-footer{
+	background-color:  #595959;
+	margin: 0;
+}
+.contenedor-footer{
+	padding: 1rem 0;
+	text-align: center;
+}
+footer{
+	color: #fff;
+}
+@media (min-width: 800px) {
+	.columnas{
+		display: flex;/*contenedor Flexible*/
+	}
+	.tres_columnas{
+		flex-basis: calc(25% -1rem;)
+	}
+	.dos_columnas{
+		flex-basis: calc(25% -2rem;)
+	}
+	@media (min-width: 480px) {
+	.columnas{
+		display: flex;/*contenedor Flexible*/
+	}
+	.tres_columnas{
+		flex-basis: calc(25% -1rem;)
+
+	}
+	.navegacion a{
+display: inline-block; /* hace que quede en una unasola linea los enlaces*/
+font-size: 1.8rem; /* =18px*/
+margin: 2rem;
+	}
+	.navegacion a:last-of-type{
+		margin: 0;
+	}
+}

@@ -1,0 +1,239 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+h2{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2;
+}
+header{
+ 	background-color: #8C1C03;
+	padding: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
+.img{
+	width: 75%;
+}
+#logo{
+	width: 20%;
+	padding-bottom: 2rem;
+	text-align: right;
+}
+.navegacion a{
+color: #000000;
+text-decoration: none;
+font-size: 2.2rem;
+display: block;
+}
+
+.navegacion a:hover{
+	color: #D92B04;
+}
+.site-footer{
+	background-color: #D92B04;
+	margin: 0;
+}
+.contenedor-footer{
+	padding: 1rem 0;
+	text-align: center;
+}
+footer{
+	color: #fff;
+}
+@media (min-width: 800px) {
+	.columnas{
+		display: flex;/*contenedor Flexible*/
+	}
+	.tres_columnas{
+		flex-basis: calc(33.3% -1rem;)
+	}
+	.dos_columnas{
+		flex-basis: calc(33.3% -1rem;)
+	}
+	@media (min-width: 480px) {
+	.columnas{
+		display: flex;/*contenedor Flexible*/
+	}
+	.tres_columnas{
+		flex-basis: calc(33.3% -1rem;)
+
+	}
+
+	.navegacion a{
+display: inline-block; /* hace que quede en una unasola linea los enlaces*/
+font-size: 1.8rem; /* =18px*/
+margin: 2rem;
+	}
+	.navegacion a:last-of-type{
+		margin: 0;
+        }
+}
+
+font-family:consolas;
+}
+.btn-neon{
+position: relative;
+display: inline-block;
+padding: 15px 30px;
+color: #0D0D0D;
+letter-spacing: 4px;
+text-decoration: none;
+font-size: 24px;
+overflow: hidden;
+transition: 0.2s;
+}
+.btn-neon:hover{
+ background: #D92B04;
+ box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px ##D92B04;
+ transition-delay: 1s;
+ }
+.btn-neon span{
+ position: absolute;
+ display: block;
+        }
+ #span1{
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent,#D92B04);
+ }
+ .btn-neon:hover #span1{
+ left: 100%;
+ transition: 1s;
+ }
+ #span3{
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(270deg, transparent,#D92B04);
+ }
+ .btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+  }
+  #span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,#D92B04);
+  }
+  .btn-neon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+  }
+  #span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,#D92B04);
+  }
+  .btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+
+	}
+    .banner{
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    border: 10px solid #fff;
+    animation: banner 10s infinite linear alternate;
+    background-size: 100% 100%;
+}
+@keyframes banner{ 
+    0%, 20%{
+        background-image: url(pizza1.jpg);
+        opacity: 1;
+    }
+    21%, 24%{
+        opacity: 0.5;
+    }
+    25%, 45%{
+        background-image: url("pizza2.0.jpg");
+        opacity: 1;
+    }
+    46%, 49%{
+        opacity: 0.5;
+    }
+    50%, 70%{
+         background-image: url(roles.jpg);
+        opacity: 1;
+    }
+    71%, 74%{
+        opacity: 0,5;
+    }
+    75%, 100%{
+        background-image: url(alitas.jpg);
+    }
+}
+@media only screen and (min-width:400px) and (max-width:700px){
+    .banner{
+        width:400px;
+     height: 300px;
+   }
+
+}
+     .form{
+  position:relative;
+  width:500px;
+  height:600px;
+  padding-left: 20px;
+  padding-top: 15px;
+  background-color:#e5dfcd;
+  border-radius: 20px;
+  margin:auto;
+}
+
+input[type=text],[type=email]{
+  width:470px;
+  height:35px;
+  font: 14px normal normal uppercase helvetica, arial, serif;  
+}
+
+textarea{
+  width: 470px;
+  height: 110px;
+  font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+input[type=submit]{
+  position:relative;
+  width:150px;
+  height:40px;
+  border-radius:20px;
+  margin-left: 150px;
+  border:0px;
+  background-color:#32A43E;
+  font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+p{
+  text-shadow:0 1px 0 #fff;
+  font-size:24px;
+}
+
+label{
+  margin:11px 20px 0 0;
+  font-size:16 px;
+  color:#b3aba1;
+  text-transform: uppercase;
+  text-shadow:0px 1px 0px #fff;
+}
